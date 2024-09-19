@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopy - Your Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Shopy</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" >
+        <h1>Welcome to Shopy</h1>
+        <p>Your one-stop shop for everything!</p>
+        <button class="shop-now">Shop Now</button>
+        <button class="btn prev" onclick="Prev()"><</button>
+        <button class="btn next" onclick="Next()">></button>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430060cv11d.jpg" alt="Amazon echo dot">
+                <h3>Amazon Echo Dot 4th Gen</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart" onclick="Add()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71QKQ9mwV7L._AC_SL1500_.jpg" alt="Roku Streaming Stick 4k">
+                <h3>Bestseller 2024</h3>
+                <p>$69.99</p>
+                <button class="add-to-cart" onclick="Add()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/Jbl.jpeg" alt="Product 3">
+                <h3> JBL Flip 5 Bluetooth Speaker</h3>
+                <p>$89.99</p>
+                <button class="add-to-cart" >Add to Cart</button>
+            </div>
+        </div>
+        <!-- End of Product List Icon -->
+        <div class="end-icon">
+            <a href="#" class="more-products">&#x3e;</a>
+        </div>
+    </section>
+    <section id="cart">
+        <h3>Your Cart</h3>
+        <div class="box">
+        </div>
+    </section>
+    <section id="sec-2">
+        <div class="cont">
+            <h1 class="h-main center big">Wanna Join Us</h1><br>
+          
+            <div class="form center">
+                <input type="text" class="input2" placeholder="Name"><br>
+                <input type="text" class="input2" placeholder="Email"><br>
+                <input type="text" class="input2" placeholder="Mobile"><br>
+                <input type="text" class="input2" placeholder="Write Your Message"><br>
+                <button class="btn-1" onclick="submitForm()" >Submit</button>
+                <button class="btn-1" onclick="erase()">Cancel</button>
+            </div>
+           <div id="message" class="message"></div> 
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2024 Shopy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- No image used in this website belongs.They belongs to their respective owners. I have taken them from the internet. -->
